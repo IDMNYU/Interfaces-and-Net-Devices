@@ -1,2 +1,2 @@
-# Interfaces-and-Net-Devices
-code and materials for Physical Interfaces and Network Devcices
+# Physical Interfaces and Networked Devices
+code and materials for Physical Interfaces and Network Devcices, IDM, Spring 2019.
