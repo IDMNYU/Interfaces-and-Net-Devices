@@ -31,10 +31,10 @@ void loop() {
   sensorValue = analogRead(sensorPin);
 
   // apply the calibration to the sensor reading
-  int outputValue = map(sensorValue, sensorMin, sensorMax, 0, 255);
+  int outputValue = map(sensorValue, sensorMin, sensorMax, 0, 1023);
 
   // in case the sensor value is outside the range seen during calibration
-  outputValue = constrain(outputValue, 0, 255);
+  outputValue = constrain(outputValue, 0, 1023);
 
   // fade the LED using the calibrated value:
   analogWrite(ledPin, outputValue);
@@ -45,7 +45,7 @@ void loop() {
   Serial.print("\t output = ");
   Serial.println(outputValue);
 
-  // wait 2 milliseconds before the next loop for the analog-to-digital
+  // wait 5  milliseconds before the next loop for the analog-to-digital
   // converter to settle after the last reading:
   delay(5);
 }
