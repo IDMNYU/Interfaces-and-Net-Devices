@@ -22,16 +22,10 @@ const char* password = "your_wifi_network_password";
 // Create an instance of the server
 WiFiServer server(LISTEN_PORT);
 
-// Declare functions to be exposed to the API
-int ledControl(String command);
-
 void setup(void)
 {
   // Start Serial
   Serial.begin(115200);
-
-  // Function to be exposed
-  rest.function("led",ledControl);
 
   // Give name & ID to the device (ID should be 6 characters long)
   rest.set_id("1");
