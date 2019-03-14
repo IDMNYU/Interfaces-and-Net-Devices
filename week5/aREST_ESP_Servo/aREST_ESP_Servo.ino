@@ -9,8 +9,8 @@ aREST rest = aREST();
 Servo myServo;
 
 // WiFi parameters
-const char* ssid = "bort";
-const char* password = "34tingisnice";
+const char* ssid = "NETWORKNAME";
+const char* password = "PASSWORD";
 
 // The port to listen for incoming TCP connections
 #define LISTEN_PORT           80
